@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.Log.*
+import com.example.mylibrary.MyClass
 
 const val TAG = "MainActivity"
 const val MSGC = "onCreate"
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         val strings = arrayOf("one", "four")
         println(strings[1])
         Log.d(TAG, MSGC)
+
+        val c = MyClass()
+        println(c.string)
 
         doSomething()
 
